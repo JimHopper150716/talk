@@ -547,6 +547,54 @@
       #content { padding: 32px 24px 60px; }
       .chapter-title { font-size: 24px; }
     }
+    /* ── COLLAPSIBLE STYLING ── */
+details {
+  margin-bottom: 12px;
+}
+
+summary {
+  cursor: pointer;
+  list-style: none; /* Removes default arrow */
+  outline: none;
+}
+
+summary::-webkit-details-marker {
+  display: none; /* Removes arrow in Webkit */
+}
+
+/* Category Headers (the Vibe Header) */
+.category-summary {
+  font-family: 'Special Elite', serif;
+  font-size: 20px;
+  color: var(--paper);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 0;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Question Summary */
+.question-summary {
+  font-weight: bold;
+  color: var(--text);
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.question-summary:hover {
+  color: var(--accent);
+}
+
+/* Add an indicator (plus/minus) */
+summary::before {
+  content: '[+] ';
+  color: var(--accent-dim);
+  font-family: monospace;
+}
+
+details[open] > summary::before {
+  content: '[-] ';
+}
   </style>
 </head>
 <body>
