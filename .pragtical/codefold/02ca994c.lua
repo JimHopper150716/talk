@@ -11,18 +11,6 @@ return {
       ["indent"] = 4,
       ["text"] = "    <div class=\"prose\">\
 "
-    },
-    [3] = {
-      ["line"] = 664,
-      ["indent"] = 4,
-      ["text"] = "    {\
-"
-    },
-    [4] = {
-      ["line"] = 657,
-      ["indent"] = 2,
-      ["text"] = "  {\
-"
     }
   },
   ["path"] = "index.html"
